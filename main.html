@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather app</title>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<div class="tint"></div>
+		<div class="main">
+			<video
+				src="/vid/moon.mp4"
+				autoplay
+				loop
+				muted
+				id="background"
+				class="background"
+			></video>
+		</div>
+		<div class="inner">
+			<h1 class="title">weather app</h1>
+			<div class="find-city" id="find-city">
+				<div class="find-city-input">
+					<h3>City name</h3>
+					<div>
+						<input type="text" id="city-input" class="city-input" />
+						<button id="show-weather" class="show-weather">check</button>
+					</div>
+					<label class="error hidden" id="error">City name can not be blank!</label>
+				</div>
+			</div>
+			<div class="hidden weather-result" id="weather-result">
+				<div class="location">
+					<div class="city">
+						<h3 class="city-name" id="city-name">Warsaw</h3>
+						<img
+							src="https://flagsapi.com/PL/flat/64.png"
+							alt="flag"
+							id="flag"
+						/>
+					</div>
+					<div class="sunrise-sunset">
+						<div>
+							<label class="result-title">Sunrise</label>
+							<label id="sunrise">06:04</label>
+						</div>
+						<div>
+							<label class="result-title">Sunset</label>
+							<label id="sunset">19:04</label>
+						</div>
+					</div>
+					<button class="show-weather" id="find-new-city">find new city</button>
+				</div>
+				<div class="weather-result-inner">
+					<div class="general">
+						<h4>General</h4>
+						<div>
+							<div class="result-row">
+								<label class="result-title">Temperature</label>
+								<label id="temp">12&deg</label>
+							</div>
+							<div class="result-row">
+								<label class="result-title">Feels like</label>
+								<label id="feels-like">11.7&deg</label>
+							</div>
+							<div class="result-row">
+								<label class="result-title">Humidity</label>
+								<label id="humidity">80%</label>
+							</div>
+							<div class="result-row">
+								<label class="result-title">Pressure</label>
+								<label id="pressure">1000 hPa</label>
+							</div>
+							<div class="result-row">
+								<label class="result-title">Weather</label>
+								<label id="weather-type">Thunderstorm</label>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="wind">
+							<h4>Wind</h4>
+							<div>
+								<div class="result-row">
+									<label class="result-title">Speed</label>
+									<label id="speed">2.57 m/s</label>
+								</div>
+								<div class="result-row">
+									<label class="result-title">Direction</label>
+									<label id="direction">North</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button id="credits" class="credits-button">Credits</button>
+		<div class="credits credits-hidden">
+			<div class="credits-inner">
+				<button class="close-credits" id="close-credits">Close</button>
+				<a
+					href="https://www.vecteezy.com/video/15638905-color-animated-cloud-motion-animated-background"
+					>Clouds animation by Muhammad Maulana</a
+				>
+				<a
+					href="https://www.vecteezy.com/video/11405782-beautiful-lightning-strikes-from-skies-to-camera-realistic-thunderbolts-isolated-on-black-background-with-bright-blue-flashes-electrical-storm-looped-3d-animation-4k-uhd-3840x2160"
+					>Thunderstorm animation by haciyevisax809793</a
+				>
+				<a
+					href="https://www.vecteezy.com/video/2020985-golden-sun-energy-and-particles-falling-animation-background"
+					>Sun animation by motion stock</a
+				>
+				<a
+					href="https://www.vecteezy.com/video/20925131-raindrops-break-on-the-water-in-the-dark-on-a-black-background-water-drops-in-slow-motion"
+					>Drizzle animation by karim3run216039</a
+				>
+				<a href="https://www.vecteezy.com/video/1786069-snow-falling-background"
+					>Snow animation by notjungcg</a
+				>
+				<a
+					href="https://www.vecteezy.com/video/5357501-one-minute-moon-rotate-loop"
+					>Moon animation by raymond</a
+				>
+				<a
+					href="https://www.vecteezy.com/video/3088037-raining-night-and-light-4k-footage-rain-drops-falling-in-night-at-bkk"
+					>Rain animation by Somchok Kunjaethong</a
+				>
+				<a
+					href="https://www.vecteezy.com/video/1797568-fog-looping-on-a-black-background"
+					>Fog animation by Apisit Suwannaka</a
+				>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
