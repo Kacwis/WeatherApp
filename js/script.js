@@ -51,7 +51,8 @@ showWeatherButton.addEventListener("click", () => {
 		cityInput.value = "";
 	}
 	if (API_KEY === null) {
-		backgroundVideo.setAttribute("src", "/vid/storm.mp4");
+		backgroundVideo.setAttribute("src", STORM_BACKGROUND_VIDEO_SRC);
+		hideFindCityContainer();
 	} else {
 		showWeather(cityName);
 	}
@@ -133,7 +134,7 @@ const hideWeatherResultContainer = () => {
 	weatherResultContainer.classList.add("hidden");
 	mainTitle.classList.remove("hidden");
 	findCityContainer.classList.remove("hidden");
-	backgroundVideo.setAttribute("");
+	backgroundVideo.setAttribute("src", MOON_BACKGROUND_VIDEO_SRC);
 };
 
 const showCredits = () => {
